@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
   const navigate = useNavigate();
-  const api_id = '9c8fa75d'
-  const api_key = '3b7da9050f7ffd0ccaa7d50bf0760e12'
+  const api_id = process.env.REACT_APP_API_ID
+  const api_key = process.env.REACT_APP_API_KEY
   const getRecipes = async(e)=>{
     e.preventDefault();
     //Get value from input tag  
